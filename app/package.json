@@ -1,0 +1,16 @@
+{
+    "name": "octopus",
+    "version": "1.0.0",
+    "main": "index.html",
+    "description": "Octopus 🐙 is a multi app tool for gamers",
+    "license": "Apache-2.0",
+    "author": {
+        "name": "Xisabla",
+        "email": "xisabla.dev@gmail.com",
+        "url": "https://github.com/Xisabla"
+    },
+    "repository": {
+        "url": "https://github.com/Xisabla/octopus.git",
+        "type": "git"
+    }
+}
