@@ -1,7 +1,11 @@
 {
-    "name": "octopus",
+    "name": "octopus-app",
     "version": "1.0.0",
     "description": "Octopus 🐙 is a multi app tool for gamers",
+    "keywords": [
+        "app",
+        "octopus"
+    ],
     "license": "Apache-2.0",
     "author": {
         "name": "Xisabla",
@@ -13,7 +17,10 @@
         "type": "git"
     },
     "scripts": {
-        "build": ".\\node_modules\\.bin\\nwbuild --platforms win32,win64,osx64,linux32,linux64 --buildDir build/ ./app/",
+        "build": ".\\node_modules\\.bin\\nwbuild --platforms win32,win64,linux32,linux64 --buildDir build/ ./app/",
+        "full-build": "npm run build && npm run compile:linux && npm run compile:windows && echo Done",
+        "compile:linux": "echo [compile:linux]TODO: Use tool to package node to linux deb file",
+        "compile:windows": "echo [compile:windows]TODO: Use `innosetup-compiler` package",
         "start": ".\\node_modules\\.bin\\nw ./app/",
         "precommit": ".\\node_modules\\.bin\\eslint ."
     },
